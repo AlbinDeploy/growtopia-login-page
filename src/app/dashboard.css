@@ -1,0 +1,20 @@
+/* src/app/dashboard.css */
+
+/* Jangan lock body ke height:100vh + flex center (bikin scroll & click bermasalah di mobile) */
+html, body {
+  height: auto;
+  min-height: 100dvh;      /* modern mobile viewport */
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: transparent;
+}
+
+/* Pusatkan konten pakai wrapper, bukan body */
+.pageCenter {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;           /* biar aman di layar kecil */
+  box-sizing: border-box;
+}
